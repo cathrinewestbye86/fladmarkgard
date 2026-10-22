@@ -209,7 +209,6 @@ nav.main-nav a.active {
 .hero h1 {
   color: var(--hvit);
   font-size: 3.5rem;
-  text-shadow: 2px 2px 12px rgba(0,0,0,0.4);
   margin-bottom: 0.5rem;
 }
 
@@ -218,7 +217,6 @@ nav.main-nav a.active {
   font-style: italic;
   font-size: 1.6rem;
   color: var(--gull);
-  text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
   margin-bottom: 1.5rem;
 }
 
@@ -226,7 +224,6 @@ nav.main-nav a.active {
   font-size: 1.15rem;
   max-width: 600px;
   margin: 0 auto 2rem;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
 }
 
 .hero .btn-row {
@@ -460,7 +457,6 @@ footer.main-footer p {
 .page-hero h1 {
   color: var(--hvit);
   font-size: 2.4rem;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
 }
 
 .page-hero .slagord {
