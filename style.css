@@ -246,6 +246,15 @@ section {
   text-align: center;
 }
 
+.om-oss-bilde {
+  display: block;
+  max-width: 560px;
+  width: 100%;
+  margin: 28px auto 0;
+  border-radius: var(--radius);
+  box-shadow: var(--skygge-stor);
+}
+
 /* --- Temakort --- */
 .kort-grid {
   display: grid;
