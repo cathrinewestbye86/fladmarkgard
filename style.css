@@ -237,20 +237,47 @@ section {
 .bg-alt { background: var(--alt-bg); }
 
 /* --- Om oss --- */
-.om-oss p {
-  max-width: 720px;
-  margin: 0 auto 1rem;
-  font-size: 1.08rem;
-  text-align: center;
+.om-oss-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 36px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.om-oss-bilde-wrap {
+  flex-shrink: 0;
+  width: 280px;
 }
 
 .om-oss-bilde {
-  display: block;
-  max-width: 560px;
   width: 100%;
-  margin: 28px auto 0;
   border-radius: var(--radius);
   box-shadow: var(--skygge-stor);
+}
+
+.om-oss-tekst {
+  flex: 1;
+}
+
+.om-oss-tekst p {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+@media (max-width: 700px) {
+  .om-oss-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .om-oss-bilde-wrap {
+    width: 220px;
+  }
+  .om-oss-tekst p {
+    text-align: center;
+  }
 }
 
 /* --- Temakort --- */
