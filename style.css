@@ -168,7 +168,7 @@ nav.main-nav a.active {
   justify-content: center;
   text-align: center;
   background: linear-gradient(rgba(46, 74, 50, 0.45), rgba(46, 74, 50, 0.45)),
-              url('bilder/sommer.jpg') center/cover no-repeat;
+              url('bilder/SommerferieIPT.jpeg') center/cover no-repeat;
   background-color: var(--skogsgroon);
   color: var(--hvit);
   padding: 80px 24px;
@@ -388,7 +388,7 @@ footer.main-footer p {
 /* --- Underside: Hero-lite --- */
 .page-hero {
   background: linear-gradient(rgba(46, 74, 50, 0.55), rgba(46, 74, 50, 0.55)),
-              url('bilder/sommer.jpg') center/cover no-repeat;
+              url('bilder/SommerferieIPT.jpeg') center/cover no-repeat;
   background-color: var(--skogsgroon);
   color: var(--hvit);
   text-align: center;
