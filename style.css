@@ -192,14 +192,14 @@ nav.main-nav a.active {
 /* --- Hero --- */
 .hero {
   position: relative;
-  min-height: 75vh;
+  min-height: 45vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   background: linear-gradient(160deg, var(--skogsgroon) 0%, var(--lys-groon) 100%);
   color: var(--hvit);
-  padding: 80px 24px;
+  padding: 50px 24px;
 }
 
 .hero-content {
@@ -623,7 +623,7 @@ footer.main-footer p {
 @media (max-width: 768px) {
   h1 { font-size: 2.2rem; }
   h2 { font-size: 1.6rem; }
-  .hero { min-height: 60vh; padding: 60px 20px; }
+  .hero { min-height: 40vh; padding: 40px 20px; }
   .hero h1 { font-size: 2.4rem; }
   .hero .slagord { font-size: 1.2rem; }
   nav.main-nav a { padding: 12px 14px; font-size: 0.82rem; }
