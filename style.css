@@ -506,6 +506,7 @@ footer.main-footer p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
+  margin-bottom: 2.5rem;
 }
 
 .butikk-bilder img {
