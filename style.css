@@ -206,7 +206,7 @@ nav.main-nav a.active {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(160deg, var(--skogsgroon) 0%, var(--lys-groon) 100%);
+  background: linear-gradient(rgba(46, 74, 50, 0.55), rgba(46, 74, 50, 0.55)), url('bilder/kje.jpg') center/cover no-repeat;
   color: var(--hvit);
   padding: 50px 24px;
 }
