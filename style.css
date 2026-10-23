@@ -189,6 +189,15 @@ nav.main-nav a.active {
   color: var(--hvit);
 }
 
+/* --- Hamburger-meny (skjult på desktop) --- */
+.menu-toggle {
+  display: none;
+}
+
+.menu-knapp {
+  display: none;
+}
+
 /* --- Hero --- */
 .hero {
   position: relative;
@@ -650,15 +659,42 @@ footer.main-footer p {
   .hero { min-height: 40vh; padding: 40px 20px; }
   .hero h1 { font-size: 2.4rem; }
   .hero .slagord { font-size: 1.2rem; }
-  nav.main-nav a { padding: 12px 14px; font-size: 0.82rem; }
   section { padding: 50px 20px; }
   .kort-grid { grid-template-columns: 1fr; }
   .kontakt-grid { grid-template-columns: 1fr; }
+
+  /* Hamburger-meny på mobil */
+  .menu-knapp {
+    display: block;
+    font-family: 'Noto Sans', Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--tekst-lys);
+    padding: 14px 20px;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+  }
+
+  nav.main-nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    max-width: none;
+  }
+
+  nav.main-nav .menu-toggle:checked ~ ul {
+    display: flex;
+  }
+
+  nav.main-nav a {
+    text-align: center;
+    padding: 14px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
 }
 
 @media (max-width: 480px) {
   .hero h1 { font-size: 1.9rem; }
   .hero .btn-row { flex-direction: column; align-items: center; }
-  nav.main-nav ul { flex-direction: column; }
-  nav.main-nav a { text-align: center; }
 }
