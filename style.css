@@ -206,7 +206,7 @@ nav.main-nav a.active {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(rgba(46, 74, 50, 0.55), rgba(46, 74, 50, 0.55)), url('bilder/Høner.jpg') center/cover no-repeat;
+  background: linear-gradient(rgba(46, 74, 50, 0.55), rgba(46, 74, 50, 0.55)), url('bilder/Høner.jpg') center 70%/cover no-repeat;
   color: var(--hvit);
   padding: 50px 24px;
 }
