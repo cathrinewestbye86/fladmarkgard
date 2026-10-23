@@ -511,6 +511,16 @@ footer.main-footer p {
   align-items: start;
 }
 
+/* --- Butikk: intro --- */
+.butikk-intro {
+  padding: 36px 24px;
+}
+
+.butikk-intro .innhold-seksjon {
+  padding: 0;
+}
+
+/* --- Butikk: bilder --- */
 .butikk-bilder {
   display: grid;
   grid-template-columns: 1fr 1fr;
