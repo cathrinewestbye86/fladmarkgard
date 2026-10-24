@@ -661,6 +661,17 @@ footer.main-footer p {
   color: #555;
 }
 
+/* --- Tett seksjon (mindre luft) --- */
+.tett {
+  padding-top: 36px !important;
+  padding-bottom: 36px !important;
+}
+
+.tett .innhold-seksjon {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 /* --- Sitat --- */
 .sitat {
   background: var(--hvit);
