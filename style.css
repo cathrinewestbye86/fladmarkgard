@@ -507,6 +507,16 @@ footer.main-footer p {
   margin-top: 0.5rem;
 }
 
+/* --- Booking aktiv: utvidet layout --- */
+.booking-aktiv .innhold-seksjon {
+  max-width: 1200px;
+  transition: max-width 0.4s ease;
+}
+
+.booking-aktiv section {
+  padding: 50px 24px;
+}
+
 /* --- To-kolonne layout --- */
 .to-kolonner {
   display: grid;

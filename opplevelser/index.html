@@ -90,5 +90,17 @@
 
   <script src="https://app.bookero.no/build/widget.js?v=1779999693" charset="utf-8"></script>
 
+  <script>
+    (function() {
+      function sjekkBookingHash() {
+        var hash = window.location.hash;
+        var erBooking = hash.indexOf('activity=') !== -1 || hash.indexOf('step=') !== -1;
+        document.body.classList.toggle('booking-aktiv', erBooking);
+      }
+      window.addEventListener('hashchange', sjekkBookingHash);
+      sjekkBookingHash();
+    })();
+  </script>
+
 </body>
 </html>
