@@ -739,6 +739,21 @@ footer.main-footer p {
   .kort-grid { grid-template-columns: 1fr; }
   .kontakt-grid { grid-template-columns: 1fr; }
 
+  /* Opplevelser: smalere padding på mobil for mer plass til booking-widget */
+  .bredere section {
+    padding: 30px 0;
+  }
+  .bredere .innhold-seksjon {
+    max-width: 100%;
+    padding: 30px 12px;
+  }
+  .bredere .booking-aktiv section {
+    padding: 20px 0;
+  }
+  .bredere .booking-aktiv .innhold-seksjon {
+    padding: 20px 8px;
+  }
+
   /* Hamburger-meny på mobil */
   .menu-knapp {
     display: block;
@@ -773,4 +788,12 @@ footer.main-footer p {
 @media (max-width: 480px) {
   .hero h1 { font-size: 1.9rem; }
   .hero .btn-row { flex-direction: column; align-items: center; }
+
+  /* Ekstra smal padding på små telefoner */
+  .bredere .innhold-seksjon {
+    padding: 20px 8px;
+  }
+  .bredere .booking-aktiv .innhold-seksjon {
+    padding: 16px 4px;
+  }
 }
