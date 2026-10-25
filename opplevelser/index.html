@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../style.css">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 </head>
-<body>
+<body class="bredere">
 
   <!-- Sticky meny -->
   <nav class="main-nav">
@@ -92,13 +92,28 @@
 
   <script>
     (function() {
-      function sjekkBookingHash() {
-        var hash = window.location.hash;
-        var erBooking = hash.indexOf('activity=') !== -1 || hash.indexOf('step=') !== -1;
+      function sjekkBookingUrl() {
+        var url = window.location.href;
+        var erBooking = url.indexOf('activity=') !== -1 || url.indexOf('step=') !== -1;
         document.body.classList.toggle('booking-aktiv', erBooking);
       }
-      window.addEventListener('hashchange', sjekkBookingHash);
-      sjekkBookingHash();
+
+      window.addEventListener('hashchange', sjekkBookingUrl);
+      window.addEventListener('popstate', sjekkBookingUrl);
+
+      var origPush = history.pushState;
+      var origReplace = history.replaceState;
+      history.pushState = function() {
+        origPush.apply(this, arguments);
+        sjekkBookingUrl();
+      };
+      history.replaceState = function() {
+        origReplace.apply(this, arguments);
+        sjekkBookingUrl();
+      };
+
+      setInterval(sjekkBookingUrl, 500);
+      sjekkBookingUrl();
     })();
   </script>
 
