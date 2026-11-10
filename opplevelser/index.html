@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="no">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vandring &amp; besøk – Fladmark gård</title>
-  <meta name="description" content="Opplev alpakkavandring med Kjell-Bjarne og Elling, geitevandring og guidet fisketur i Glomma på Fladmark gård.">
+  <title>Vandring &amp; besøk – Alpakkavandring, geitevandring og fisketur | Fladmark gård</title>
+  <meta name="description" content="Opplev alpakkavandring, geitevandring og guidet fisketur i Glomma på Fladmark gård i Askim, Indre Østfold. Book enkelt online.">
   <link rel="stylesheet" href="../style.css">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 </head>
@@ -30,45 +30,30 @@
     <p class="slagord">Opplev gården og dyrene på nært hold</p>
   </header>
 
-  <!-- Alpakkavandring -->
+  <!-- Oversikt over turene -->
   <section class="bg-krem">
     <div class="innhold-seksjon">
-      <h2>Alpakkavandring med Kjell-Bjarne og Elling</h2>
-      <div class="underline"></div>
-      <p>Tur med våre alpakkaer, Kjell-Bjarne og Elling. En unik opplevelse for både barn og voksne.</p>
-      <div data-booking-widget
-           data-widget-id="72746d61-cd4c-4b78-a5ac-63fd535d9ecc"
-           data-locale="no"
-           data-base-url="https://app.bookero.no"
-           style="margin-top:20px;"></div>
-    </div>
-  </section>
-
-  <!-- Geitevandring -->
-  <section class="bg-alt">
-    <div class="innhold-seksjon">
-      <h2>Geitevandring</h2>
-      <div class="underline"></div>
-      <p>Vi tar med geitene på tur. Geitene er nysgjerrige og sosiale, og det er alltid gøy å se hvor ferden går.</p>
-      <div data-booking-widget
-           data-widget-id="0e95e652-111b-46ba-84d4-bfa8b9435798"
-           data-locale="no"
-           data-base-url="https://app.bookero.no"
-           style="margin-top:20px;"></div>
-    </div>
-  </section>
-
-  <!-- Guidert fisketur -->
-  <section class="bg-krem">
-    <div class="innhold-seksjon">
-      <h2>Guidet gå- og fisketur</h2>
-      <div class="underline"></div>
-      <p>Glomma byr på rike fiskemuligheter. Vi tilbyr guidet fisketur der du kan fiske etter både gjedde og abbor.</p>
-      <div data-booking-widget
-           data-widget-id="d4e23843-adf3-4f02-84f0-4d8e656f9039"
-           data-locale="no"
-           data-base-url="https://app.bookero.no"
-           style="margin-top:20px;"></div>
+      <p>Kom til Fladmark gård ved bredden av Glomma i Askim, en times kjøretur fra Oslo, midt i Indre Østfold. Her kan du vandre med alpakkaer, bli med geitene på oppdagelsestur eller fiske gjedde og abbor i Glomma. Alle turene passer for familier, par og grupper, og du booker enkelt online.</p>
+      <div class="kort-grid">
+        <div class="kort">
+          <div class="ikon">🦙</div>
+          <h3>Alpakkavandring</h3>
+          <p>Med våre to alpakkaer, Kjell-Bjarne og Elling, tar vi turen ut i naturen. En rolig og nær opplevelse for både barn og voksne.</p>
+          <a href="../alpakkavandring/" class="kort-lenke">Les mer og book her →</a>
+        </div>
+        <div class="kort">
+          <div class="ikon">🐐</div>
+          <h3>Geitevandring</h3>
+          <p>Våre nysgjerrige kasjmirgeiter tar dere med på tur. En uformell og morsom tur i kulturlandskapet ved Glomma.</p>
+          <a href="../geitevandring/" class="kort-lenke">Les mer og book her →</a>
+        </div>
+        <div class="kort">
+          <div class="ikon">🎣</div>
+          <h3>Guidet gå- og fisketur</h3>
+          <p>Glomma byr på rike fiskemuligheter. Vi tar dere med til gode fiskeplasser, der du kan fiske etter både gjedde og abbor.</p>
+          <a href="../fisketur/" class="kort-lenke">Les mer og book her →</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -87,35 +72,6 @@
     <p>Kontakt: Espen · 988 16 111 · espen@fladmarkgard.no</p>
     <p>© 2025 Fladmark gård</p>
   </footer>
-
-  <script src="https://app.bookero.no/build/widget.js?v=1779999693" charset="utf-8"></script>
-
-  <script>
-    (function() {
-      function sjekkBookingUrl() {
-        var url = window.location.href;
-        var erBooking = url.indexOf('activity=') !== -1 || url.indexOf('step=') !== -1;
-        document.body.classList.toggle('booking-aktiv', erBooking);
-      }
-
-      window.addEventListener('hashchange', sjekkBookingUrl);
-      window.addEventListener('popstate', sjekkBookingUrl);
-
-      var origPush = history.pushState;
-      var origReplace = history.replaceState;
-      history.pushState = function() {
-        origPush.apply(this, arguments);
-        sjekkBookingUrl();
-      };
-      history.replaceState = function() {
-        origReplace.apply(this, arguments);
-        sjekkBookingUrl();
-      };
-
-      setInterval(sjekkBookingUrl, 500);
-      sjekkBookingUrl();
-    })();
-  </script>
 
 </body>
 </html>

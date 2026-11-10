@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guidet fisketur i Glomma – Gjedde og abbor i Askim | Fladmark gård</title>
+  <meta name="description" content="Guidet gå- og fisketur i Glomma fra Fladmark gård i Askim. Fisk etter gjedde og abbor med lokal guide. Book online – Indre Østfold, ca. 1 time fra Oslo.">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+</head>
+<body class="bredere">
+
+  <!-- Sticky meny -->
+  <nav class="main-nav">
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-knapp">☰ Meny</label>
+    <ul>
+      <li><a href="../">Forsiden</a></li>
+      <li><a href="../opplevelser/" class="active">Vandring &amp; besøk</a></li>
+      <li><a href="../arrangementer/">Bursdager &amp; events</a></li>
+      <li><a href="../inn-på-tunet/">Inn på tunet</a></li>
+      <li><a href="../butikk/">Gårdsbutikk</a></li>
+      <li><a href="../om-oss/">Om oss og gården</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero-lite -->
+  <header class="page-hero">
+    <h1>Guidet fisketur i Glomma</h1>
+    <p class="slagord">Gjedde og abbor rett utenfor gjerdet</p>
+  </header>
+
+  <section class="bg-krem">
+    <div class="innhold-seksjon">
+      <p>Glomma er Norges lengste elv, og ved Fladmark gård i Askim har vi noen av de beste fiskeplassene i Indre Østfold rett utenfor gjerdet. Elva nedenfor gården er en del av Vammasjøen, et stille og næringsrikt elvestrekke som har matet folk her i århundrer.</p>
+      <p>Bli med på guidet gå- og fisketur etter gjedde og abbor. Turen passer for alle: nybegynnere som aldri har holdt en fiskestang, og erfarne fiskere som vil utforske en ny elvestrekning.</p>
+      <h2>Slik foregår turen</h2>
+      <div class="underline"></div>
+      <p>Dere møter en av oss på tunet, og sammen går vi ned til elva. Guiden kjenner elva og fisketoktene i området, og underveis får dere tips om kasteteknikk, agn og fiskeplasser. En rolig og unik måte å oppleve Glomma på!</p>
+
+      <div data-booking-widget
+           data-widget-id="d4e23843-adf3-4f02-84f0-4d8e656f9039"
+           data-locale="no"
+           data-base-url="https://app.bookero.no"
+           style="margin-top:20px;"></div>
+    </div>
+  </section>
+
+  <section class="bg-alt">
+    <div class="innhold-seksjon">
+      <h2>Godt å vite</h2>
+      <div class="underline"></div>
+      <ul>
+        <li>Ingen erfaring nødvendig. Barn går sammen med en voksen.</li>
+        <li>Parkering ved gården: Skjoldenveien 329, 1815 Askim.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="bg-krem">
+    <div class="innhold-seksjon">
+      <p>Også populært hos oss: <a href="../alpakkavandring/">Alpakkavandring i Askim</a> og <a href="../geitevandring/">Geitevandring i Askim</a>.</p>
+    </div>
+  </section>
+
+  <!-- Kontakt nederst -->
+  <section class="kontakt-bunn">
+    <h3>Kontakt Espen</h3>
+    <p>Telefon: <a href="tel:+4798816111">988 16 111</a></p>
+    <p>E-post: <a href="mailto:espen@fladmarkgard.no">espen@fladmarkgard.no</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <p class="footer-tittel">Fladmark gård · Kom for å trives</p>
+    <p>Gård ved Glomma · Sertifisert Inn på tunet-gård</p>
+    <p>Skjoldenveien 329, 1815 Askim</p>
+    <p>Kontakt: Espen · 988 16 111 · espen@fladmarkgard.no</p>
+    <p>© 2025 Fladmark gård</p>
+  </footer>
+
+  <script src="https://app.bookero.no/build/widget.js?v=1779999693" charset="utf-8"></script>
+
+  <script>
+    (function() {
+      function sjekkBookingUrl() {
+        var url = window.location.href;
+        var erBooking = url.indexOf('activity=') !== -1 || url.indexOf('step=') !== -1;
+        document.body.classList.toggle('booking-aktiv', erBooking);
+      }
+
+      window.addEventListener('hashchange', sjekkBookingUrl);
+      window.addEventListener('popstate', sjekkBookingUrl);
+
+      var origPush = history.pushState;
+      var origReplace = history.replaceState;
+      history.pushState = function() {
+        origPush.apply(this, arguments);
+        sjekkBookingUrl();
+      };
+      history.replaceState = function() {
+        origReplace.apply(this, arguments);
+        sjekkBookingUrl();
+      };
+
+      setInterval(sjekkBookingUrl, 500);
+      sjekkBookingUrl();
+    })();
+  </script>
+
+</body>
+</html>
