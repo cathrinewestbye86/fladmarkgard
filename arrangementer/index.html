@@ -1,12 +1,99 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="no">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bursdager &amp; events – Fladmark gård</title>
-  <meta name="description" content="Feir barnebursdag på Fladmark gård – grillhytte med utsikt over Glomma, bålpanner på tunet, tilvalg med alpakkaer og geiter, matpakker og hjemmelaget pizza.">
+  <title>Bursdager &amp; events på gården – Fladmark gård i Askim</title>
+  <meta name="description" content="Barnebursdag og event på Fladmark gård i Askim. Basis: leie av grillhytta med utsikt over Glomma eller bålplass på tunet, 650 kr. Tilvalg: tur med hjullasteren, alpakkabesøk og geitebesøk, matpakker med hjemmelaget pizza.">
+  <link rel="canonical" href="https://fladmarkgård.no/arrangementer/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bursdager &amp; events – Fladmark gård">
+  <meta property="og:description" content="Bursdager og events på gården: ett område (650 kr) pluss valgfrie tilvalg av aktiviteter og mat.">
+  <meta property="og:url" content="https://fladmarkgård.no/arrangementer/">
+  <meta property="og:image" content="https://fladmarkgård.no/bilder/Gresskar3.jpg">
+  <meta property="og:locale" content="no_NO">
   <link rel="stylesheet" href="../style.css">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <style>
+    /* Sidspesifikk stil for arrangementer-siden – bygger på felles stilark */
+
+    /* Kort for områder og tilvalg */
+    .arr-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+      margin-top: 1.5rem;
+    }
+    .arr-grid-loddrett { grid-template-columns: 1fr; }
+    .arr-kort {
+      background: var(--hvit);
+      border-radius: var(--radius);
+      padding: 30px 26px;
+      box-shadow: var(--skygge);
+      display: flex;
+      flex-direction: column;
+    }
+    .arr-kort .ikon { font-size: 2.4rem; margin-bottom: 10px; }
+    .arr-kort h3 { font-size: 1.3rem; }
+    .merke {
+      display: inline-block;
+      align-self: flex-start;
+      font-family: 'Noto Sans', Arial, sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      background: var(--gull);
+      color: var(--skogsgroon);
+      border-radius: 20px;
+      padding: 5px 16px;
+      margin: 8px 0 12px;
+    }
+    .arr-kort p { font-size: 0.98rem; color: #444; margin: 0; }
+
+    /* FAQ */
+    .faq { margin-top: 1.5rem; }
+    .faq details {
+      background: var(--hvit);
+      border-radius: var(--radius);
+      box-shadow: var(--skygge);
+      padding: 18px 24px;
+      margin-bottom: 12px;
+    }
+    .faq summary {
+      cursor: pointer;
+      font-weight: 700;
+      color: var(--skogsgroon);
+      font-family: 'Noto Sans', Arial, sans-serif;
+      font-size: 1rem;
+    }
+    .faq details p { margin: 10px 0 0; font-size: 0.98rem; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Farm",
+    "name": "Fladmark gård",
+    "url": "https://fladmarkgård.no/",
+    "telephone": "+4798816111",
+    "email": "espen@fladmarkgard.no",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Skjoldenveien 329",
+      "postalCode": "1815",
+      "addressLocality": "Askim",
+      "addressCountry": "NO"
+    },
+    "description": "Gård ved Glomma i Askim med barnebursdager og events. Sertifisert Inn på tunet-gård.",
+    "makesOffer": [
+      { "@type": "Offer", "name": "Leie av grillhytta eller bålplassen", "price": "650", "priceCurrency": "NOK" },
+      { "@type": "Offer", "name": "Tilvalg: tur med hjullasteren", "price": "550", "priceCurrency": "NOK" },
+      { "@type": "Offer", "name": "Tilvalg: alpakkabesøk", "price": "450", "priceCurrency": "NOK" },
+      { "@type": "Offer", "name": "Tilvalg: geitebesøk", "price": "350", "priceCurrency": "NOK" },
+      { "@type": "Offer", "name": "Matpakke med pølser, inntil 15 personer", "price": "1100", "priceCurrency": "NOK" },
+      { "@type": "Offer", "name": "Matpakke med gryterett, inntil 15 personer", "price": "1350", "priceCurrency": "NOK" },
+      { "@type": "Offer", "name": "Matpakke med hjemmelaget pizza fra vedfyrt uteovn, inntil 15 personer", "price": "1600", "priceCurrency": "NOK" }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -24,55 +111,31 @@
     </ul>
   </nav>
 
-  <!-- Hero-lite -->
+  <!-- Hero -->
   <header class="page-hero">
     <h1>Bursdager &amp; events</h1>
     <p class="slagord">Feires på gården – midt i naturen</p>
   </header>
 
-  <!-- Barnebursdager intro -->
+  <!-- Områder -->
   <section class="bg-krem">
     <div class="innhold-seksjon">
-      <h2>Barnebursdag på gården</h2>
+      <h2>Velkommen!</h2>
       <div class="underline"></div>
-      <p>Velg mellom to flotte områder for bursdagsfeiringen. Begge byr på ekte gårdsfølelse, med dyrene i nærheten og Glomma som kulisse.</p>
-    </div>
-  </section>
-
-  <!-- Område 1 -->
-  <section class="bg-alt">
-    <div class="innhold-seksjon">
-      <div class="to-kolonner">
-        <div>
-          <h2>Område 1 – Grillhytta</h2>
-          <div class="underline" style="margin-left:0;"></div>
-          <p>Åpen 15. september – 15. april.</p>
-          <p>Grillhytta ligger med praktfull utsikt over Glomma og beitedyrene. Her kan du grille og kose deg i le for vind og vær, samtidig som du har naturen rett utenfor døra.</p>
+      <p>Alt begynner med et sted å være.</p>
+      <div class="arr-grid">
+        <div class="arr-kort">
+          <div class="ikon">🏡</div>
+          <h3>Grillhytta</h3>
+          <div class="merke">650 kr</div>
+          <p>Ligger med utsikt over Glomma og beitedyrene.</p>
+          <p style="margin-top:8px;">Tilgjengelig i perioden 15. september til 15. april</p>
         </div>
-        <div class="prisliste">
-          <h3>Leie av område</h3>
-          <table>
-            <tr><td>Grillhytte / grillplass</td><td>650 kr</td></tr>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Område 2 -->
-  <section class="bg-krem">
-    <div class="innhold-seksjon">
-      <div class="to-kolonner">
-        <div>
-          <h2>Område 2 – Grillplassen på tunet</h2>
-          <div class="underline" style="margin-left:0;"></div>
-          <p>To bålpanner på tunet, nær hønsene og kaninene. Her sitter dere midt i gårdsmiljøet og kan følge med på dyrene mens bålet spraker.</p>
-        </div>
-        <div class="prisliste">
-          <h3>Leie av område</h3>
-          <table>
-            <tr><td>Grillhytte / grillplass</td><td>650 kr</td></tr>
-          </table>
+        <div class="arr-kort">
+          <div class="ikon">🔥</div>
+          <h3>Bålplassen</h3>
+          <div class="merke">650 kr</div>
+          <p>Bålplassen på tunet. Her er hønsene og kaninene nærmeste naboer.</p>
         </div>
       </div>
     </div>
@@ -83,41 +146,65 @@
     <div class="innhold-seksjon">
       <h2>Tilvalg</h2>
       <div class="underline"></div>
-      <div class="prisliste">
-        <table>
-          <tr><td>Mini hjullaster-kjøring</td><td>550 kr</td></tr>
-          <tr><td>Alpakkaene besøker (Kjell-Bjarne &amp; Elling)</td><td>450 kr</td></tr>
-          <tr><td>Geiter inkl. mating</td><td>350 kr</td></tr>
-        </table>
+      <div class="arr-grid arr-grid-loddrett">
+        <div class="arr-kort">
+          <div class="ikon">🚜</div>
+          <h3>Tur med hjullasteren</h3>
+          <div class="merke">550 kr</div>
+        </div>
+        <div class="arr-kort">
+          <div class="ikon">🦙</div>
+          <h3>Alpakkabesøk</h3>
+          <div class="merke">450 kr</div>
+        </div>
+        <div class="arr-kort">
+          <div class="ikon">🐐</div>
+          <h3>Geitebesøk</h3>
+          <div class="merke">350 kr</div>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Matpakker -->
-  <section class="bg-krem">
-    <div class="innhold-seksjon">
-      <h2>Matpakker</h2>
-      <div class="underline"></div>
-      <p>Matpakker for inntil 15 personer. Velg mellom:</p>
+      <h3>Matpakker</h3>
+      <p>Matpakkene er basert på 15 personer. Medbrakt er selvfølgelig tillatt!</p>
       <div class="prisliste">
         <table>
           <tr><td>Pølser</td><td>1 100 kr</td></tr>
           <tr><td>Gryterett</td><td>1 350 kr</td></tr>
           <tr><td>Hjemmelaget pizza fra vedfyrt uteovn</td><td>1 600 kr</td></tr>
         </table>
-        <p class="pris-note">Medbrakt mat er også helt lov. Toaletter tilgjengelig. Gårdsbutikken er åpen.</p>
       </div>
     </div>
   </section>
 
   <!-- Firmaevents -->
-  <section class="bg-alt">
+  <section class="bg-krem">
     <div class="innhold-seksjon">
-      <h2>Events for firmaer &amp; foreninger</h2>
+      <h2>Firmaer, lag og foreninger</h2>
       <div class="underline"></div>
-      <p>Vi tilbyr skreddersydde opplegg for bedrifter, foreninger og organisasjoner. Enten det er teambuilding, fagdag eller en sosial samling – vi legger til rette for en meningsfull dag på gården.</p>
-      <p>Ta kontakt for et uforpliktende tilbud.</p>
-      <a href="mailto:espen@fladmarkgard.no?subject=Forespørsel%20om%20firmaevent" class="btn btn-primary" style="margin-top:12px;">Send forespørsel</a>
+      <p>Skal jobben eller laget ut på landet? Vi tar imot bedrifter, foreninger og organisasjoner til teambuilding, fagdag eller en sosial dag. Bygget opp på samme måte: ett område og tilvalg etter ønske, gjerne kombinert med <a href="../opplevelser/">alpakkavandring eller guidet fisketur</a>.</p>
+      <p>Ta kontakt for tilbud.</p>
+      <a href="mailto:espen@fladmarkgard.no?subject=Foresp%C3%B8rsel%20om%20firmaevent&amp;body=%C3%98nsket%20dato%3A%0D%0AAntall%20deltakere%3A%0D%0A%C3%98nsket%20program%20%28teambuilding%2C%20fagdag%2C%20sosialt%29%3A%0D%0AAllergier%20eller%20andre%20hensyn%3A" class="btn btn-primary" style="margin-top:12px;">Send forespørsel</a>
+    </div>
+  </section>
+
+  <!-- Godt å vite -->
+  <section class="bg-alt tett">
+    <div class="innhold-seksjon">
+      <h2>Godt å vite</h2>
+      <div class="underline"></div>
+      <div class="faq">
+        <details>
+          <summary>Hvordan bestiller vi?</summary>
+          <p>Send en e-post eller ring Espen på 988 16 111. Si når dere vil komme, hvor mange dere er, og hva dere vil ha av tilvalg – så ordner vi resten.</p>
+        </details>
+        <details>
+          <summary>Hva om været er dårlig?</summary>
+          <p>Kle dere etter været.</p>
+        </details>
+        <details>
+          <summary>Kan dere tilrettelegge for barn med behov?</summary>
+          <p>Ja, det er vi vant til. Fladmark gård er sertifisert Inn på tunet-gård. Si ifra om allergier eller andre hensyn når dere tar kontakt, så finner vi en løsning som passer alle.</p>
+        </details>
+      </div>
     </div>
   </section>
 
@@ -134,7 +221,7 @@
     <p>Gård ved Glomma · Sertifisert Inn på tunet-gård</p>
     <p>Skjoldenveien 329, 1815 Askim</p>
     <p>Kontakt: Espen · 988 16 111 · espen@fladmarkgard.no</p>
-    <p>© 2025 Fladmark gård</p>
+    <p>© 2026 Fladmark gård</p>
   </footer>
 
 </body>
